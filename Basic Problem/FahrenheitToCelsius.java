@@ -6,6 +6,6 @@ System.out.println("Enter Temperature In Fahrenheit to Convert In Celsius");
 float Fahrenheit=sc.nextFloat();
 float Celsius= ((Fahrenheit-32)*5/9);
 
-System.out.println("Fahrenheit \u00B0F "+Fahrenheit+" to Celsius Is "+Celsius+" \u00B0C");
+System.out.println("Fahrenheit "+Fahrenheit+"\u00B0F  to Celsius Is "+Celsius+"\u00B0C");
 }
 }
