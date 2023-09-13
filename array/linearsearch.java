@@ -14,18 +14,18 @@ public class linearsearch {
             arr[i] = sc.nextInt();
         }
 
-        // finding maximum in array
-        int sum=0;
-        int product=1;
-
-        for (int i = 0; i < arr.length; i++) {
-            // minimum
-            sum=sum+arr[i];
-            if(arr[i]>0){
-product=product*arr[i];
-
-            }
+//   which element wanted to search
+System.out.print("Enter Which Element Wanted To Search In Array = ");
+int search=sc.nextInt();
+boolean present=false;
+ // Linear Search Logic
+for (int i = 0; i < arr.length; i++) {
+           if(arr[i]==search){
+present=true;
+break;
+           }
         }
+
         // printing array
         System.out.print("\nOriginal Array = ");
 for (int i = 0; i < arr.length; i++) {
@@ -33,9 +33,18 @@ for (int i = 0; i < arr.length; i++) {
         }
 System.out.println();
         // printing maximum / minimum
-        System.out.println("Sum of Element In Array = "+sum+"\n Product of Element In Array = "+product);
+  
 
+System.out.println("Element Wanted to Search "+search);
+if(present){
+System.out.println("Element Present In Array");
 
+}
+else{
+
+System.out.println("Element Not Present In Array");
+
+}
 
         sc.close();
     }
