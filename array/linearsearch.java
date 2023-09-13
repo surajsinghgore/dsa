@@ -14,6 +14,7 @@ public class linearsearch {
             arr[i] = sc.nextInt();
         }
 
+        // ! Main Linear Search Program 
 //   which element wanted to search
 System.out.print("Enter Which Element Wanted To Search In Array = ");
 int search=sc.nextInt();
