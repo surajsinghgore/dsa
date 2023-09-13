@@ -14,40 +14,37 @@ public class linearsearch {
             arr[i] = sc.nextInt();
         }
 
-        // ! Main Linear Search Program 
-//   which element wanted to search
-System.out.print("Enter Which Element Wanted To Search In Array = ");
-int search=sc.nextInt();
-boolean present=false;
- // Linear Search Logic
-for (int i = 0; i < arr.length; i++) {
-           if(arr[i]==search){
-present=true;
-break;
-           }
+        // ! Main Linear Search Program
+        // which element wanted to search
+        System.out.print("Enter Which Element Wanted To Search In Array = ");
+        int search = sc.nextInt();
+        boolean present = false;
+        // Linear Search Logic
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == search) {
+                present = true;
+                break;
+            }
         }
 
         // printing array
         System.out.print("\nOriginal Array = ");
-for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
-System.out.println();
+        System.out.println();
         // printing maximum / minimum
-  
 
-System.out.println("Element Wanted to Search "+search);
-if(present){
-System.out.println("Element Present In Array");
+        System.out.println("Element Wanted to Search " + search);
+        if (present) {
+            System.out.println("Element Present In Array");
 
-}
-else{
+        } else {
 
-System.out.println("Element Not Present In Array");
+            System.out.println("Element Not Present In Array");
 
-}
+        }
 
         sc.close();
     }
 }
-

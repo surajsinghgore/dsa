@@ -15,30 +15,27 @@ public class sumandproduct {
         }
 
         // declaring variables
-        int sum=0;
-        int product=1;
+        int sum = 0;
+        int product = 1;
 
         for (int i = 0; i < arr.length; i++) {
             // sum calculate
-            sum=sum+arr[i];
+            sum = sum + arr[i];
             // product calculate
-            if(arr[i]>0){
-product=product*arr[i];
+            if (arr[i] > 0) {
+                product = product * arr[i];
 
             }
         }
         // printing array
         System.out.print("\nOriginal Array = ");
-for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
-System.out.println();
+        System.out.println();
         // printing sum / product
-        System.out.println("Sum of Element In Array = "+sum+"\n Product of Element In Array = "+product);
-
-
+        System.out.println("Sum of Element In Array = " + sum + "\n Product of Element In Array = " + product);
 
         sc.close();
     }
 }
-

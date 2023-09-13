@@ -29,12 +29,12 @@ public class maxandmin {
             }
         }
         // printing array
-for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
-System.out.println();
+        System.out.println();
         // printing maximum / minimum
-        System.out.println("Maximum Element In Array = "+max+" and minimum = "+min);
+        System.out.println("Maximum Element In Array = " + max + " and minimum = " + min);
         sc.close();
     }
 }
