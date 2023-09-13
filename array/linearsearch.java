@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sumandproduct {
+public class linearsearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // taking array size from user
@@ -14,14 +14,13 @@ public class sumandproduct {
             arr[i] = sc.nextInt();
         }
 
-        // declaring variables
+        // finding maximum in array
         int sum=0;
         int product=1;
 
         for (int i = 0; i < arr.length; i++) {
-            // sum calculate
+            // minimum
             sum=sum+arr[i];
-            // product calculate
             if(arr[i]>0){
 product=product*arr[i];
 
@@ -33,7 +32,7 @@ for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
 System.out.println();
-        // printing sum / product
+        // printing maximum / minimum
         System.out.println("Sum of Element In Array = "+sum+"\n Product of Element In Array = "+product);
 
 
