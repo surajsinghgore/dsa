@@ -15,24 +15,23 @@ public class reversearray {
             arr[i] = sc.nextInt();
         }
 
-        // ! Main reverse array Logic
-        // which element wanted to search
      
        
         
-        // printing array
+        // printing original array
         System.out.println(arr.length+"\nOriginal Array  Before Reverse  ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
 
-
+// reverse array 
         int j=arr.length;
 int arr2[]=new int[j];
 for (int i= 0; i <arr.length; i++) {
         arr2[j-1]=arr[i];
         j=j-1;
 }
+// printing array
         System.out.println("\n After Reverse Array ");
       for (int i = 0; i < arr2.length; i++) {
             System.out.print(arr2[i] + " ");
