@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class demo {
+class fillarraywithone {
 
     public static void main(String[] args) {
         int arr[]=new int[5];
