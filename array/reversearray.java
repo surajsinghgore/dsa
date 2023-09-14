@@ -19,23 +19,27 @@ public class reversearray {
        
         
         // printing original array
-        System.out.println(arr.length+"\nOriginal Array  Before Reverse  ");
+        System.out.println("\nOriginal Array  Before Reverse  ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
 
 // reverse array 
-        int j=arr.length;
-int arr2[]=new int[j];
-for (int i= 0; i <arr.length; i++) {
-        arr2[j-1]=arr[i];
-        j=j-1;
+int start=0;
+int end=(arr.length-1);
+while (start<=end) {
+    int temp=arr[start];
+    arr[start]=arr[end];
+    arr[end]=temp;
+    start++;end--;
 }
-// printing array
-        System.out.println("\n After Reverse Array ");
-      for (int i = 0; i < arr2.length; i++) {
-            System.out.print(arr2[i] + " ");
-        }   
+
+// printing after reverse array
+       System.out.println("\nAfter Reverse Array ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
 
       
 
