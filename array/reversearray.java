@@ -24,7 +24,7 @@ public class reversearray {
             System.out.print(arr[i] + " ");
         }
 
-// reverse array 
+// reverse array logic
 int start=0;
 int end=(arr.length-1);
 while (start<=end) {
