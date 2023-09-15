@@ -22,17 +22,15 @@ public class swapalternate {
         }
 
         // Swap Alternative Logic
-    
 
-        for (int i = 0; i < arr.length-1; i+=2) {
+        for (int i = 0; i < arr.length - 1; i += 2) {
             // swap values in array
-           int temp=arr[i];
-           arr[i]=arr[i+1];
-           arr[i+1]=temp;
+            int temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
         }
 
-        
-         // array after alternate swap array
+        // array after alternate swap array
         System.out.println("\nArray After Alternate Swap");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
