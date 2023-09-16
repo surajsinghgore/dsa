@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class swapalternate {
+public class uniqueoccurrence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // taking array size from user
@@ -16,25 +15,20 @@ public class swapalternate {
         }
 
         // printing original array
-        System.out.println("\nOriginal Array  Before Extract Odd And Even Element From Array  ");
+        System.out.println("\nOriginal Array  Which Is Entered By User");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
 
-        // Swap Alternative Logic
-System.out.println(arr.length+"\n");
-        for (int i = 0; i < arr.length-1; i += 2) {
-            // swap values in array
-            int temp = arr[i];
-            arr[i] = arr[i + 1];
-            arr[i + 1] = temp;
+        // Find Unique Occurrence in array
+        int ans=0;
+        for (int i = 0; i < arr.length; i++) {
+            ans=ans^arr[i];
         }
 
-        // array after alternate swap array
-        System.out.println("\nArray After Alternate Swap");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        // Printing Unique Value In Array 
+        System.out.println("\nUnique Element In Array = "+ans);
+       
         sc.close();
     }
 }
