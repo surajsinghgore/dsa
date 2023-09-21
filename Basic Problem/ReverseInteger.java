@@ -13,7 +13,7 @@ public class ReverseInteger {
             temp = temp / 10;
 
         }
-        System.out.println("Reverse Of "+num+" is "+ans);
+        System.out.println("Reverse Of " + num + " is " + ans);
 
     }
 }
