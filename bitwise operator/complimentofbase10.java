@@ -1,16 +1,16 @@
 public class complimentofbase10 {
     public static void main(String[] args) {
-        int num=5;
-        int mask = 1;
+        int num=10;
+       int temp=num;
+        int mask=0;
 
-        while (mask < num){
-
-            mask = (mask << 1) + 1;
-            System.out.println(mask);
-        }
+while (temp!=0) {
     
-        int res= mask ^ num;
-System.out.println(res);
+mask=(mask<<1)|1;
+    temp=temp>>1;
+}
 
+int ans=(~num)&mask;
+System.out.println(ans);
     }
 }
