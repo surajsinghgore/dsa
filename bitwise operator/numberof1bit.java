@@ -4,6 +4,7 @@ public class numberof1bit {
         int temp = num;
         int countBit = 0;
         while (num != 0) {
+            System.out.println(num&1);
             if ((num&1)==1) {
 
                 countBit++;
